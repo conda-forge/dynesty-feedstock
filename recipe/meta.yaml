@@ -1,6 +1,6 @@
 {% set name = "dynesty" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "ddaeae35d359abb4cbb1c277500acab55b54ef4fb14932caacb4b8a6f719f7af" %}
+{% set version = "1.1" %}
+{% set sha256 = "5870aaad6494099e62267521d245bd199753d34801c5b383147e1dd14bb2dd93" %}
 
 package:
   name: {{ name|lower }}
@@ -13,11 +13,11 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
@@ -36,7 +36,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A dynamic nested sampling package for computing Bayesian posteriors and evidences.'
+  summary: A dynamic nested sampling package for computing Bayesian posteriors and evidences.
 
   description: |
     dynesty is a dynamic nested sampling package for computing Bayesian posteriors and evidences. Pure Python.
