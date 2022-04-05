@@ -1,6 +1,6 @@
 {% set name = "dynesty" %}
-{% set version = "1.2.0" %}
-{% set sha256 = "590fe37780854e8b04194639a1aa29e6e5534bc9a646e02505626348165bce87" %}
+{% set version = "1.2.1" %}
+{% set sha256 = "865c89123288122644ac3abfa51dd6b57117188a1ee2b5b4e69acc0ffe0bd0c5" %}
 
 package:
   name: {{ name|lower }}
