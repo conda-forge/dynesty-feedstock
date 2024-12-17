@@ -1,6 +1,6 @@
 {% set name = "dynesty" %}
-{% set version = "2.1.4" %}
-{% set sha256 = "cd98cfded1af86487b76dba2bd89824c803f1e0c451fcb14a0b208c5ca1a8004" %}
+{% set version = "2.1.5" %}
+{% set sha256 = "fd742d483a1f78086bc8a36316594fa1e18eeb3a27f8293fca147b377b5cd311" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
