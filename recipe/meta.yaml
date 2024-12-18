@@ -18,15 +18,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - scipy
     - matplotlib-base
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - dynesty
 
