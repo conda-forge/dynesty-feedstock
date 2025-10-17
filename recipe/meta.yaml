@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -21,6 +21,7 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools
+    - setuptools-scm
   run:
     - python >={{ python_min }}
     - numpy
