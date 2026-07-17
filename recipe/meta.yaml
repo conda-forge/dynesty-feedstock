@@ -1,6 +1,6 @@
 {% set name = "dynesty" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "806c83b21904cf7df73c2478a9e0e8a2b7d811cd0d613109f3f810a7111d12b0" %}
+{% set version = "3.1.0" %}
+{% set sha256 = "851717431f04f749bca45e86704c28fecf9f3b10f85a2a69820b26e42cefab68" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
