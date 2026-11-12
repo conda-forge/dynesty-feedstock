@@ -1,6 +1,6 @@
 {% set name = "dynesty" %}
-{% set version = "3.1.0" %}
-{% set sha256 = "851717431f04f749bca45e86704c28fecf9f3b10f85a2a69820b26e42cefab68" %}
+{% set version = "3.2.0" %}
+{% set sha256 = "177ca0eade6d8ffff2d5ab2cca3d710d1045385840f3bdc402f748e53d72098a" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
